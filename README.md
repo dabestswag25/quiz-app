@@ -12,17 +12,17 @@
     3. All except the last one
     4. Maybe
  
-3. How many faces, or sides, are on a cube?
-    1. 6
-    2. 7
-    3. 8
-    4. 9
+3. In which structures of the thylakoid membrane does light energy enter?
+    1. Reaction center
+    2. Photosystem I
+    3. Photosystem II
+    4. Photosystem I and II
   
 4. What are the products of cellular respiration?
     1. Glucose and oxygen
     2. Oxygen, Carbon Dioxide, Water
     3. Glucose, ATP, Water
-    4. Carbon Dioxide, Water, Oxygen
+    4. Carbon Dioxide, Water, ATP
   
 5. Is this question completely unfair?
     1. Yes
@@ -54,7 +54,7 @@
     3. NADH is removed.
     4. The Krebs cycle occurs.
   
-10. Which question was about cubes?
+10. Which question was about cellular respiration?
     1. 3
     2. 4
     3. 5
