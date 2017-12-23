@@ -8,14 +8,7 @@
 
 import Foundation
 
-class Answer {
-    
+struct Answer {
     var text:      String
     var isCorrect: Bool
-    
-    init(text: String, isCorrect: Bool) {
-        self.text      = text
-        self.isCorrect = isCorrect
-    }
-    
 }
