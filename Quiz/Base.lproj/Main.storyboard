@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Title" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -22,8 +22,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gij-c9-1uO">
-                                <rect key="frame" x="138.5" y="222" width="43" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gij-c9-1uO">
+                                <rect key="frame" x="112" y="222" width="96" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -49,10 +49,10 @@
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="33.733133433283363"/>
         </scene>
-        <!--View Controller-->
+        <!--Quiz-->
         <scene sceneID="0ty-Eu-9Df">
             <objects>
-                <viewController id="q5k-JT-cst" sceneMemberID="viewController">
+                <viewController title="Quiz" id="q5k-JT-cst" customClass="QuizViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LgO-OW-iQB"/>
                         <viewControllerLayoutGuide type="bottom" id="Vel-GI-ffo"/>
@@ -73,18 +73,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqD-fU-wbu">
                                         <rect key="frame" x="0.0" y="0.0" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="q5k-JT-cst" eventType="touchUpInside" id="bba-uh-91D"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39t-y8-hlA">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="39t-y8-hlA">
                                         <rect key="frame" x="0.0" y="30" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="q5k-JT-cst" eventType="touchUpInside" id="B1O-VD-ebV"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOf-Hb-ukD">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EOf-Hb-ukD">
                                         <rect key="frame" x="0.0" y="60" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="q5k-JT-cst" eventType="touchUpInside" id="47C-rN-sUA"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2i-s8-uLf">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2i-s8-uLf">
                                         <rect key="frame" x="0.0" y="90" width="288" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerButtonPressed:" destination="q5k-JT-cst" eventType="touchUpInside" id="Z4f-Px-OC7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -100,17 +112,22 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="pRt-ct-mnx" kind="show" identifier="Show Results" id="2lF-TM-mTb"/>
+                        <outlet property="answerButton0" destination="aqD-fU-wbu" id="52e-tV-Hs0"/>
+                        <outlet property="answerButton1" destination="39t-y8-hlA" id="Rwe-0C-wk1"/>
+                        <outlet property="answerButton2" destination="EOf-Hb-ukD" id="nGT-PC-wfw"/>
+                        <outlet property="answerButton3" destination="u2i-s8-uLf" id="bAg-jR-gRR"/>
+                        <outlet property="questionLabel" destination="Cb5-ws-Qq3" id="V0V-Cw-noZ"/>
+                        <segue destination="pRt-ct-mnx" kind="presentation" identifier="Show Results" modalTransitionStyle="flipHorizontal" id="2lF-TM-mTb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uZK-KR-npD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="762" y="35"/>
         </scene>
-        <!--View Controller-->
+        <!--Results-->
         <scene sceneID="472-0u-WS5">
             <objects>
-                <viewController id="pRt-ct-mnx" sceneMemberID="viewController">
+                <viewController title="Results" id="pRt-ct-mnx" customClass="ResultsViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xeh-ps-Nvr"/>
                         <viewControllerLayoutGuide type="bottom" id="M19-MF-oR4"/>
@@ -138,6 +155,9 @@
                             <constraint firstItem="M1s-hg-zVX" firstAttribute="centerX" secondItem="887-lj-GMq" secondAttribute="centerX" id="WWc-Wj-LUz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="aDw-j6-95B" id="0XJ-Dz-6uZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rku-rR-qT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
