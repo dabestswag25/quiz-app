@@ -1,7 +1,6 @@
 //
 //  QuizViewController.swift
-//  Quiz
-//
+//  Quiz//
 //  Created by UCode on 12/15/17.
 //  Copyright © 2017 Preston. All rights reserved.
 //
@@ -36,16 +35,16 @@ class QuizViewController: UIViewController {
             Answer(text: "Carbon Dioxide, Water, ATP", isCorrect: true)
         ]),
         Question(text: "What is the first step of mitosis?", answers: [
-            Answer(text: "Telophase", isCorrect: false),
-            Answer(text: "Metaphase", isCorrect: false),
             Answer(text: "Prophase", isCorrect: true),
+            Answer(text: "Metaphase", isCorrect: false),
+            Answer(text: "Telophase", isCorrect: false),
             Answer(text: "Anaphase", isCorrect: false)
         ]),
-        Question(text: "Which organelle is the site of photosynthesis in plant cells?", answers: [
-            Answer(text: "Chloroplast", isCorrect: true),
-            Answer(text: "Mitochondria", isCorrect: false),
-            Answer(text: "Nucleus", isCorrect: false),
-            Answer(text: "Golgi Apparatus", isCorrect: false)
+        Question(text: "Which base is only found in DNA?", answers: [
+            Answer(text: "Adenine", isCorrect: false),
+            Answer(text: "Guanine", isCorrect: false),
+            Answer(text: "Thymine", isCorrect: true),
+            Answer(text: "Uracil", isCorrect: false)
         ]),
         Question(text: "What does RuBP stand for?", answers: [
             Answer(text: "I don't know", isCorrect: false),
@@ -74,6 +73,7 @@ class QuizViewController: UIViewController {
     ])
     
     @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var questionNumberLabel: UILabel!
     @IBOutlet weak var answerButton0: UIButton!
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
@@ -81,10 +81,12 @@ class QuizViewController: UIViewController {
     
     func show(question:Question) {
         questionLabel.text = question.text
-        answerButton0.setTitle(question.answers[0].text, for: .normal)
-        answerButton1.setTitle(question.answers[1].text, for: .normal)
-        answerButton2.setTitle(question.answers[2].text, for: .normal)
-        answerButton3.setTitle(question.answers[3].text, for: .normal)
+    answerButton0.setTitle(question.answers[0].text, for: .normal)
+    answerButton1.setTitle(question.answers[1].text, for: .normal)
+    answerButton2.setTitle(question.answers[2].text, for: .normal)
+    answerButton3.setTitle(question.answers[3].text, for: .normal)
+    
+        questionNumberLabel.text = "\(quiz.currentQuestionNumber) of \(quiz.questions.count)"
     }
     
     @IBAction func answerButtonPressed(_ sender: UIButton) {
@@ -106,8 +108,18 @@ class QuizViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         show(question: quiz.currentQuestion)
     }
-
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        let resultsViewController = segue.destination as! ResultsViewController
+        resultsViewController.quiz = quiz
+        
+    }
+
+    @IBAction func unwindSegueToQuizViewController(segue: UIStoryboardSegue) {
+        quiz.reset()
+        show(question: quiz.currentQuestion)
+    }
     
     
 }
