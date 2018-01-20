@@ -30,11 +30,11 @@
     3. Yes
     4. Yes
   
-6. Which organelle is the site of photosynthesis in plant cells?
-    1. Chloroplast
-    2. Mitochondria
-    3. Nucleus
-    4. Golgi apparatus
+6. Which base is only found in DNA?
+    1. Adenine
+    2. Guanine
+    3. Thymine
+    4. Uracil
   
 7. What does RuBP stand for?
     1. I don't know
