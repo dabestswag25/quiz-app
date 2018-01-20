@@ -24,11 +24,11 @@
     3. Glucose, ATP, Water
     4. Carbon Dioxide, Water, ATP
   
-5. Is this question completely unfair?
-    1. Yes
-    2. No
-    3. Yes
-    4. Yes
+5. What is the first step of mitosis?
+    1. Prophase
+    2. Metaphase
+    3. Telophase
+    4. Anaphase
   
 6. Which base is only found in DNA?
     1. Adenine
