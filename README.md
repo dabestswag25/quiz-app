@@ -54,9 +54,9 @@
     3. NADH is removed.
     4. The Krebs cycle occurs.
   
-10. Which question was about cellular respiration?
-    1. 3
-    2. 4
-    3. 5
-    4. 17
+10. Why was this quiz titled "Math Quiz"?
+    1. It was a lie.
+    2. Question 5 was about math.
+    3. Question 7 was about math.
+    4. Biology is math.
   
