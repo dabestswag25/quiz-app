@@ -16,6 +16,13 @@
 		AD2DAE971FE4B1F400EF8C06 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2DAE961FE4B1F400EF8C06 /* Answer.swift */; };
 		AD2DAE991FE4B20700EF8C06 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2DAE981FE4B20700EF8C06 /* Question.swift */; };
 		AD2DAE9B1FE4B21700EF8C06 /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD2DAE9A1FE4B21700EF8C06 /* Quiz.swift */; };
+		AD591F52201C051400FA911F /* Quicksand-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F4E201C051300FA911F /* Quicksand-Regular.ttf */; };
+		AD591F53201C051400FA911F /* Quicksand-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F4F201C051300FA911F /* Quicksand-Medium.ttf */; };
+		AD591F54201C051400FA911F /* Quicksand-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F50201C051300FA911F /* Quicksand-Light.ttf */; };
+		AD591F55201C051400FA911F /* Quicksand-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F51201C051400FA911F /* Quicksand-Bold.ttf */; };
+		AD591F5A201C058000FA911F /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F57201C057F00FA911F /* Comfortaa-Bold.ttf */; };
+		AD591F5B201C058000FA911F /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F58201C057F00FA911F /* Comfortaa-Light.ttf */; };
+		AD591F5C201C058000FA911F /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AD591F59201C057F00FA911F /* Comfortaa-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,13 @@
 		AD2DAE961FE4B1F400EF8C06 /* Answer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		AD2DAE981FE4B20700EF8C06 /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		AD2DAE9A1FE4B21700EF8C06 /* Quiz.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
+		AD591F4E201C051300FA911F /* Quicksand-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Regular.ttf"; sourceTree = "<group>"; };
+		AD591F4F201C051300FA911F /* Quicksand-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Medium.ttf"; sourceTree = "<group>"; };
+		AD591F50201C051300FA911F /* Quicksand-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Light.ttf"; sourceTree = "<group>"; };
+		AD591F51201C051400FA911F /* Quicksand-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Quicksand-Bold.ttf"; sourceTree = "<group>"; };
+		AD591F57201C057F00FA911F /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		AD591F58201C057F00FA911F /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		AD591F59201C057F00FA911F /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +76,8 @@
 		AD2DAE831FE4B0CC00EF8C06 /* Quiz */ = {
 			isa = PBXGroup;
 			children = (
+				AD591F56201C056E00FA911F /* Comfortaa */,
+				AD591F49201C04EF00FA911F /* Quicksand */,
 				AD2DAE841FE4B0CC00EF8C06 /* AppDelegate.swift */,
 				AD2DAE861FE4B0CC00EF8C06 /* QuizViewController.swift */,
 				AD2DAE961FE4B1F400EF8C06 /* Answer.swift */,
@@ -74,6 +90,27 @@
 				AD2DAE901FE4B0CC00EF8C06 /* Info.plist */,
 			);
 			path = Quiz;
+			sourceTree = "<group>";
+		};
+		AD591F49201C04EF00FA911F /* Quicksand */ = {
+			isa = PBXGroup;
+			children = (
+				AD591F51201C051400FA911F /* Quicksand-Bold.ttf */,
+				AD591F50201C051300FA911F /* Quicksand-Light.ttf */,
+				AD591F4F201C051300FA911F /* Quicksand-Medium.ttf */,
+				AD591F4E201C051300FA911F /* Quicksand-Regular.ttf */,
+			);
+			path = Quicksand;
+			sourceTree = "<group>";
+		};
+		AD591F56201C056E00FA911F /* Comfortaa */ = {
+			isa = PBXGroup;
+			children = (
+				AD591F57201C057F00FA911F /* Comfortaa-Bold.ttf */,
+				AD591F58201C057F00FA911F /* Comfortaa-Light.ttf */,
+				AD591F59201C057F00FA911F /* Comfortaa-Regular.ttf */,
+			);
+			path = Comfortaa;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,9 +173,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD591F5A201C058000FA911F /* Comfortaa-Bold.ttf in Resources */,
+				AD591F55201C051400FA911F /* Quicksand-Bold.ttf in Resources */,
 				AD2DAE8F1FE4B0CC00EF8C06 /* LaunchScreen.storyboard in Resources */,
 				AD2DAE8C1FE4B0CC00EF8C06 /* Assets.xcassets in Resources */,
+				AD591F5B201C058000FA911F /* Comfortaa-Light.ttf in Resources */,
 				AD2DAE8A1FE4B0CC00EF8C06 /* Main.storyboard in Resources */,
+				AD591F54201C051400FA911F /* Quicksand-Light.ttf in Resources */,
+				AD591F52201C051400FA911F /* Quicksand-Regular.ttf in Resources */,
+				AD591F5C201C058000FA911F /* Comfortaa-Regular.ttf in Resources */,
+				AD591F53201C051400FA911F /* Quicksand-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

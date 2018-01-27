@@ -21,23 +21,33 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Math Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQx-bk-Ied">
-                                <rect key="frame" x="139.5" y="271.5" width="96" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="title-bg" translatesAutoresizingMaskIntoConstraints="NO" id="R3U-BG-FIJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading…" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQx-bk-Ied">
+                                <rect key="frame" x="152.5" y="274.5" width="70.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="R3U-BG-FIJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="05B-bZ-bO5"/>
+                            <constraint firstItem="R3U-BG-FIJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="9l5-ol-mqr"/>
                             <constraint firstItem="WQx-bk-Ied" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="A27-IT-y9B"/>
                             <constraint firstItem="WQx-bk-Ied" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-50" id="Apv-Tg-qxC"/>
+                            <constraint firstAttribute="trailing" secondItem="R3U-BG-FIJ" secondAttribute="trailing" id="dAF-mb-ubL"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="R3U-BG-FIJ" secondAttribute="bottom" id="iAp-WK-auB"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="title-bg" width="626" height="774"/>
+    </resources>
 </document>
