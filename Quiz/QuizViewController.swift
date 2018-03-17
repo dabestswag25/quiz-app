@@ -34,11 +34,11 @@ class QuizViewController: UIViewController {
             Answer(text: "Glucose, ATP, Water", isCorrect: false),
             Answer(text: "Carbon Dioxide, Water, ATP", isCorrect: true)
         ]),
-        Question(text: "What is the first step of mitosis?", answers: [
-            Answer(text: "Prophase", isCorrect: true),
+        Question(text: "What phase of mitosis involves the separation of sister chromatids?", answers: [
+            Answer(text: "Prophase", isCorrect: false),
             Answer(text: "Metaphase", isCorrect: false),
             Answer(text: "Telophase", isCorrect: false),
-            Answer(text: "Anaphase", isCorrect: false)
+            Answer(text: "Anaphase", isCorrect: true)
         ]),
         Question(text: "Which base is only found in DNA?", answers: [
             Answer(text: "Adenine", isCorrect: false),
@@ -63,6 +63,36 @@ class QuizViewController: UIViewController {
             Answer(text: "NADH becomes NAD+.", isCorrect: true),
             Answer(text: "NADH is removed.", isCorrect: false),
             Answer(text: "The Krebs cycle occurs.", isCorrect: false)
+        ]),
+        Question(text: "Which question was about RuBP?", answers: [
+            Answer(text: "Question 6", isCorrect: false),
+            Answer(text: "Question 7", isCorrect: true),
+            Answer(text: "Question 8", isCorrect: false),
+            Answer(text: "Question 314", isCorrect: false),
+        ]),
+        Question(text: "What is the genotype RR referred to as?", answers: [
+            Answer(text: "Homozygous Dominant", isCorrect: true),
+            Answer(text: "Homozygous Recessive", isCorrect: false),
+            Answer(text: "Heterozygous", isCorrect: false),
+            Answer(text: "What does this have to do with math?", isCorrect: false),
+        ]),
+        Question(text: "Which of the following RNA molecules carry an anticodon?", answers: [
+            Answer(text: "ribozymes", isCorrect: false),
+            Answer(text: "mRNA", isCorrect: false),
+            Answer(text: "rRNA", isCorrect: false),
+            Answer(text: "tRNA", isCorrect: true),
+        ]),
+        Question(text: "Which one?", answers: [
+            Answer(text: "This one.", isCorrect: false),
+            Answer(text: "This one.", isCorrect: false),
+            Answer(text: "That one.", isCorrect: true),
+            Answer(text: "This one.", isCorrect: false),
+            ]),
+        Question(text: "Who established the theory of natural selection?", answers: [
+            Answer(text: "Gregor Mendel", isCorrect: false),
+            Answer(text: "Francis Crick", isCorrect: false),
+            Answer(text: "Charles Darwin", isCorrect: true),
+            Answer(text: "Preston Tran", isCorrect: false),
         ]),
         Question(text: "Why was this quiz titled \"Math Quiz\"?", answers: [
             Answer(text: "It was a lie.", isCorrect: true),

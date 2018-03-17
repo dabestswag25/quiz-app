@@ -18,13 +18,33 @@ class ResultsViewController: UIViewController {
     func showResults() {
         scoreLabel.text = "\(quiz.score)/\(quiz.questions.count)"
         
-        if(quiz.score == 10)
+        if(quiz.score == 15)
         {
             feedbackLabel.text = "Wow! A perfect score!"
         }
-        else if(quiz.score == 9)
+        if(quiz.score == 14)
+        {
+            feedbackLabel.text = "Truly amazing!"
+        }
+        if(quiz.score == 13)
+        {
+            feedbackLabel.text = "Triskaidekaphobia."
+        }
+        if(quiz.score == 12)
+        {
+            feedbackLabel.text = "Excellent!"
+        }
+        if(quiz.score == 11)
         {
             feedbackLabel.text = "Great job!"
+        }
+        if(quiz.score == 10)
+        {
+            feedbackLabel.text = "Nice!"
+        }
+        else if(quiz.score == 9)
+        {
+            feedbackLabel.text = "Pretty good!"
         }
         else if(quiz.score == 8)
         {
